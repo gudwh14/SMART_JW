@@ -12,8 +12,8 @@
 <body> 
 
 	<!-- 로고 이미지 -->
-	<div >
-		<img src="" class="img-reponsive center-block"/>
+	<div class ="imagecentor-block " style ="margin-top:90px; max-wdith:150px display: inline-block;text-align: center;">
+		 <img class="img centor-block" src="Resource/img/logo_icon.png" width="150" height="150 "alt="">
 	</div>
 	
 	<!-- 로그인 입력창 폼 -->
@@ -39,11 +39,13 @@
 	</div>
 	
 	<!-- 하단 footer -->
-	<footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">
-
-      Copyright ⓒ 스마트 항만공사 All Rights Reserved.
-
-    </footer>
+	<div >
+		<footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">
+	
+	      Copyright ⓒ 스마트 항만공사 All Rights Reserved.
+	
+	    </footer>
+    </div>
 	<!-- Bootstrap core JavaScript -->
   <script src="Resource/vendor/jquery/jquery.min.js"></script>
   <script src="Resource/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
