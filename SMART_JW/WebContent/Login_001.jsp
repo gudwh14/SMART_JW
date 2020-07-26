@@ -10,18 +10,12 @@
 	<title>½º¸¶Æ® Ç×¸¸°ø»ç</title>
 </head>
 <body> 
-	<!-- ·Î°í ÀÌ¹ÌÁö -->
 	<div class ="imagecentor-block " style ="max-wdith:150px display: inline-block;text-align: center;">
 		 <img class="img centor-block" src="Resource/img/logo_icon.png" width="150" height="150 "alt="">
 	</div>
 	
-<<<<<<< HEAD
-	<!-- ë¡œê·¸ì¸ ìž…ë ¥ì°½ í¼ -->
 	<div class="container mt-2">
-=======
-	<!-- ·Î±×ÀÎ ÀÔ·ÂÃ¢ Æû -->
 	<div class="container mt-3" style="max-width: 300px;">
->>>>>>> 1db3709d9e4e67e8165143999ec2986899c9057e
 		<form method="post" action="./LoginAction.jsp">
 			<div class="form-group">
 				<label>»ç¾÷ÀÚ µî·Ï ¹øÈ£</label>
