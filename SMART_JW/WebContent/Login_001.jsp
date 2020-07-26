@@ -17,7 +17,7 @@
 	</div>
 	
 	<!-- 로그인 입력창 폼 -->
-	<div class="container mt-3" style="max-width: 300px;">
+	<div class="container mt-2">
 		<form method="post" action="./LoginAction.jsp">
 			<div class="form-group">
 				<label>사업자 등록 번호</label>
