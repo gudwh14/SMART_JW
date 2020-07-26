@@ -17,24 +17,24 @@
 		<form method="post" action="./LoginAction.jsp">
 			<div class="form-group">
 				<label>사업자 등록 번호</label>
-				<input type="text" name="Regist_Num" class="form-control">
+				<input type="text" style="width:200px; height:200px;" name="Regist_Num" class="form-control">
 			</div>
 			<div class="form-group">
 				<label>업체(기관)명</label>
-				<input type="text" name="Enterprise_Name" class="form-control">
+				<input type="text" style="width:200px; height:200px;" name="Enterprise_Name" class="form-control">
 			</div>
 			<div class="form-group">
 				<label>대표자 성명</label>
-				<input type="text" name="Leader_Name" class="form-control">
+				<input type="text" style="width:200px; height:200px;" name="Leader_Name" class="form-control">
 			</div>
 			<div class="form-group">
 				<label>사업자 등록증</label>
-				<input type="text" name="Regist_Certificate" class="form-control">
+				<input type="text" style="width:200px; height:200px;" name="Regist_Certificate" class="form-control">
 				<input type="button" style="width:30px; height:30px;" name="Upload_Button" class="form-control" value="업로드">
 			</div>
 			<div class="form-group">
 				<label>대표자 확인서</label>
-				<input type="text" name="Leader_Certificate" class="form-control">
+				<input type="text" style="width:200px; height:200px;" name="Leader_Certificate" class="form-control">
 				<input type="button" style="width:30px; height:30px;" name="Upload_Button" class="form-control" value="업로드">
 			</div>
 		</form>		
