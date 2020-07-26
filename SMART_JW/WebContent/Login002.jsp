@@ -54,7 +54,7 @@
          <BR>
          <BR>
          <div class="form-group" align="center">
-         	<input type="button" style="width:50px; height:30px; align:center;" name="Find_Address" class="form-control" value="다음">
+         	<input type="button" style="width:55px; height:30px; align:center;" name="Find_Address" class="form-control" value="다음">
          </div>
       </form>      
    </div>
