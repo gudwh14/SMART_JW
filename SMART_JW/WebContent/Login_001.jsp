@@ -43,6 +43,13 @@
 			</div>
 		</form>		
 	</div>
+	<div >
+		<footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">
+
+	      Copyright ⓒ 스마트 항만공사 All Rights Reserved.
+
+	    </footer>
+    </div>
 	<!-- Bootstrap core JavaScript -->
   <script src="Resource/vendor/jquery/jquery.min.js"></script>
   <script src="Resource/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
