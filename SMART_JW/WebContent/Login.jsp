@@ -12,7 +12,7 @@
 <body> 
 
 	<!-- 로고 이미지 -->
-	<div class ="imagecentor-block " style ="margin-top:90px; max-wdith:150px display: inline-block;text-align: center;">
+	<div class ="image centor-block " style ="margin-top:90px; max-wdith:150px display: inline-block;text-align: center;">
 		 <img class="img centor-block" src="Resource/img/logo_icon.png" width="150" height="150 "alt="">
 	</div>
 	
