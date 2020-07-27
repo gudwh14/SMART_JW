@@ -149,7 +149,9 @@ $(document).ready(function(){
           		  	
           		  	<label for="ex_filename">업로드</label>
           		  	<input type="file" id="ex_filename" class="upload-hidden">
-
+					<div >
+      					<span id="checkMessage" style="color:red;font-weight:bold"></span> 	
+     	 			</div>
 					
           		  	<!--  <input type="text" style = "margin-right:10px" name="insurance_certificate" class=" form-control" >
          			<button type="submit" class = " btn btn=default" >업로드</button>
@@ -158,10 +160,7 @@ $(document).ready(function(){
       				</div>
       			</div>
       		</div>
-      		<div>
-      			<span id="checkMessage" style="color:red;font-weight:bold"></span> 
-      			
-      		</div>
+      		
       		<div class ="col text-center">>
       		<button class="btn btn-primary pull-right" type="button">등록</button>
       		</div>
