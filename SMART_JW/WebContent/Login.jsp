@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="EUC-KR">
-	<meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+	<meta name="viewport" content="height=auto width=device-width initial-scale=1 shrink-to-fit=no">
 	<link rel="stylesheet" href="Resource/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="Resource/vendor/bootstrap/css/custom.css">
 	<title>스마트 항만공사</title>
