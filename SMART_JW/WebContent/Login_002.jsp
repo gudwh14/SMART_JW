@@ -13,21 +13,27 @@
 <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script> 
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript">
+
 function idCheck(){ 
-	var userName = $("#registerName").val(); 
+	var userName = $("#userID").val(); 
 	$.ajax({ 
+		async :true,
 		type : 'POST', 
 		url : './BoardIdCheckServlet', 
-		data : {userName : userName}, 
-		success : function(result){ 
-			if(result == 1){
-				$("#checkMessage").html("사용할 수 있는 아이디입니다.");
-				} else { 
-					$("#checkMessage").html("사용중인 아이디입니다. 다른 아이디를 입력해 주세요");
-					} 
+		data : {
+			"id" : $('userID').val();
+		},
+		success : function(data){ 
+			if($.trim(data)==0){
+				$('#checkMsg').html('<p style="color:blue">사용가능</p>'); 
+				} else{ 
+					$('#checkMsg').html('<p style="color:red">사용불가능</p>'); 
+					}
 			} 
 		}) 
 }
+
+
 function pwdcheck(){
 	var password1 = $("#userpassword").val();
 	var password2 = $("#userpw_check").val();
