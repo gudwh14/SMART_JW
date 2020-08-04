@@ -24,15 +24,6 @@
         <a class="nav-item nav-link" href="#">출입허가 신청</a>
      	<a class="nav-item nav-link" href="#">출입증 현황</a>
       	<a class="btn btn-primary" href="#">Sign In</a>
-		
-		 <!-- 
-		<nav class="nav justify-content-center ">
-			<a class="nav-item nav-link active" href="#">신청 출입 절차</a>
-        	<a class="nav-item nav-link" href="#">출입허가 신청</a>
-     		<a class="nav-item nav-link" href="#">출입증 현황</a>
-			<a class="btn btn-primary" href="#">Sign In</a>
-		</nav>
-		-->
   	</div>
   </nav>
   

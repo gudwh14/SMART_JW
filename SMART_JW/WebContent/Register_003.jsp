@@ -121,26 +121,26 @@ $(document).ready(function(){
    		</div>
    </div>     
     
-   <div class="container mt-3" style="max-width: 350px;">
-         <form method="post" action="./LoginAction.jsp">
-         <div class="form-group">
-            <label>이름</label>
-            <input type="search" name="userName" class="form-control" placeholder ="이름을 입력해 주세요">
-         </div>
-         <div class="form-group">
-            <label>아이디</label>
-            <input type="text" name="userID" class="form-control" placeholder ="ID을 입력해 주세요">
-         </div>
-         <div class="form-group">
-            <label>비밀번호</label>
-            <input type="password" id="userpassword" class="form-control" placeholder ="password을 입력해 주세요">
-         </div>
-         <div class="form-group">
-            <label>비밀번호 확인</label>
-            <input type="password" id="userpw_check" class="form-control" placeholder ="password을 재입력해 주세요" onkeyup="pwdcheck();">
-         </div>
-         <div class="form-group">           	
-            <div><label>4대보험 증서</label></div>
+	<div class="container mt-3" style="max-width: 350px;">
+		<form method="post" action="./LoginAction.jsp">
+         	<div class="form-group">
+            	<label>이름</label>
+            	<input type="search" name="userName" class="form-control" placeholder ="이름을 입력해 주세요">
+         	</div>
+         	<div class="form-group">
+            	<label>아이디</label>
+            	<input type="text" name="userID" class="form-control" placeholder ="ID을 입력해 주세요">
+         	</div>
+         	<div class="form-group">
+            	<label>비밀번호</label>
+            	<input type="password" id="userpassword" class="form-control" placeholder ="password을 입력해 주세요">
+         	</div>
+         	<div class="form-group">
+            	<label>비밀번호 확인</label>
+            	<input type="password" id="userpw_check" class="form-control" placeholder ="password을 재입력해 주세요" onkeyup="pwdcheck();">
+         	</div>
+         	<div class="form-group">           	
+            	<div><label>4대보험 증서</label></div>
           		  <div class="filebox">
           		  	<input class="upload-name" value="파일 선택" disabled = disabled> 
           		  	
@@ -152,19 +152,13 @@ $(document).ready(function(){
 					
           		  	<!--  <input type="text" style = "margin-right:10px" name="insurance_certificate" class=" form-control" >
          			<button type="submit" class = " btn btn=default" >업로드</button>
-      				-->
-      				
-      				</div>
+      				-->	
       			</div>
       		</div>
-      		
-      		<div class ="col text-center">>
+      	<div class ="col text-center">>
       		<button class="btn btn-primary pull-right" type="button">등록</button>
-      		</div>
-      		
+      	</div>
       </form>
    </div>
-   
-   
 </body>
 </html>
