@@ -2,7 +2,7 @@
 
 @import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
-.navbar-brand, h1, h2, h3, h4 {
+.navbar-brand, h1, h2, h3, h4,.nav-item {
 
   font-family: 'Jeju Gothic';
 
@@ -12,7 +12,7 @@ h5 {
 
   font-family: 'Jeju Gothic';
 
-  font-size: 18px;
+  font-size: 12px;
 
 }
 
@@ -22,10 +22,60 @@ body {
 
 }
 
-footer{ position:fixed; 
-  left:0px; 
-  bottom:0px; 
-  height:60px; 
-  width:100%; 
-  background:grey; 
-  color: white; }
+
+  
+.centor-sort {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 300px;
+}
+
+.img-resize {
+    width: auto; height: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.txtBox00bg, .txtBox01bg, .txtBox02bg, .txtBox03bg, .txtBox04bg, .txtBox00rd, .txtBox01rd, .txtBox05bg, .txtBox06bg {
+	border-style: solid; 
+	border-width: 1px;
+	padding: 8px; 
+	word-break: break-all; 
+	text-align:center;
+}
+
+ 
+.txtBox00bg { border-color: LightGray;
+	background-color:rgba(211, 211, 211, 0.2);
+ }
+.txtBox01bg { border-color: DodgerBlue; 
+	background-color:rgba(30, 144, 255, 0.2);
+}
+.txtBox02bg { border-color: LightSalmon; 
+	background-color:rgba(255, 160, 122, 0.2);
+} 
+.txtBox03bg { border-color: Tomato;
+	background-color:rgba(255, 99, 71, 0.2);
+} 
+.txtBox04bg { border-color: Crimson;
+	background-color:rgba(237, 20, 61, 0.2);
+}
+.txtBox05bg { border-color: DodgerBlue; 
+	background-color: DodgerBlue;
+}
+.txtBox06bg { border-color: rgba(30, 144, 255, 0.2); 
+	background-color: rgba(30, 144, 255, 0.2);
+}
+.txtBox00rd {
+	border-color: DodgerBlue; 
+	background-color:rgba(0, 0, 0, 0);
+	border-radius : 100px;
+}
+
+.txtBox01rd {
+	border-color: Grey; 
+	background-color:rgba(0, 0, 0, 0);
+	border-radius : 10px;
+}

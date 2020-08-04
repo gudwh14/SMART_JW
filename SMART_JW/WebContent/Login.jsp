@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="EUC-KR">
-	<meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+	<meta name="viewport" content="height=auto width=device-width initial-scale=1 shrink-to-fit=no">
 	<link rel="stylesheet" href="Resource/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="Resource/vendor/bootstrap/css/custom.css">
 	<title>스마트 항만공사</title>
@@ -12,7 +12,7 @@
 <body> 
 
 	<!-- 로고 이미지 -->
-	<div class ="imagecentor-block " style ="margin-top:90px; max-wdith:150px display: inline-block;text-align: center;">
+	<div class ="image centor-block " style ="margin-top:90px; max-wdith:150px display: inline-block;text-align: center;">
 		 <img class="img centor-block" src="Resource/img/logo_icon.png" width="150" height="150 "alt="">
 	</div>
 	
