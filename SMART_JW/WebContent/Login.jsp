@@ -13,7 +13,7 @@
 
 	<!-- 로고 이미지 -->
 	<div class ="image centor-block " style ="margin-top:90px; max-wdith:150px display: inline-block;text-align: center;">
-		 <img class="img centor-block" src="Resource/img/logo_icon.png" width="150" height="150 "alt="">
+		 <a href="index.html"><img class="img centor-block" src="Resource/img/logo_icon.png" width="150" height="150 "alt=""></a>
 	</div>
 	
 	<!-- 로그인 입력창 폼 -->
@@ -35,7 +35,7 @@
 	
 	<div class="container mt-3 centor-block" style="max-width:300px display: inline-block;text-align: center;">
 		<a class="navbar-text" href="#">ID/PW찾기</a>
-		<a class="navbar-text" href="#">회원가입</a>
+		<a class="navbar-text" href="Register_001.jsp">회원가입</a>
 	</div>
 	
 	<!-- 하단 footer -->

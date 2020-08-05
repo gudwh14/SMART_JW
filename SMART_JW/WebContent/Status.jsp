@@ -15,15 +15,14 @@
 <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top navbar-expand-lg ">
     <div class="container">
-    	<a class ="navbar-brand" href="#">
+    	<a class ="navbar-brand" href="index.html">
     		<img class="img-resize" src="Resource/img/logo_icon2.png" style="width:200px; height:80px;"alt="">
     	</a>
     	
-    	
 		<a class="nav-item nav-link active" href="#">신청 출입 절차</a>
-        <a class="nav-item nav-link" href="#">출입허가 신청</a>
-     	<a class="nav-item nav-link" href="#">출입증 현황</a>
-      	<a class="btn btn-primary" href="#">Sign In</a>
+        <a class="nav-item nav-link" href="AccessApply.jsp">출입허가 신청</a>
+     	<a class="nav-item nav-link" href="Status.jsp">출입증 현황</a>
+      	<a class="btn btn-primary" href="Login.jsp">Sign In</a>
   	</div>
   </nav>
   
