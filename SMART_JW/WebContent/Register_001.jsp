@@ -15,24 +15,26 @@
 		 <img class="img-resize" src="Resource/img/logo_icon2.png" alt="">
 	</div>
 	
+	
+	<h5 style="text-align:center; font-size:18px; margin-top:30px;">가입유형 선택</h5>
 	<!-- 회원가입 TYPE 고르기 -->
-	<div class ="image centor-block " style ="margin-top:20px; max-wdith:0px display: inline-block;text-align: center;">
+	<div class ="centor-sort" style ="text-align:center; margin-bottom:50px;">
 		<div class = "row centor-sort">
-			<div class = "col-md-auto" style="margin-right:50px">
+			<div class = "col-md-auto" style="">
 				<div class ="1">
-						<img class="img" src="Resource/img/company+admin_icon.png" width="	" height="200"alt="">
+						<img class="img-fluid" src="Resource/img/company+admin_icon.png" width="150px" height="150px"alt="">
 				</div>
 				<div class ="a">
-					<input type = "radio" name ="reg_radio"  value="company+admin">업체 + 관리자
+					<input type = "radio" name ="reg_radio"  value="company+admin"> 업체 + 관리자
 				</div>
 			</div>
 			
-			<div class = "col-md-auto"  style="margin-left:50px">
+			<div class = "col-md-auto"  style="">
 				<div class ="1">
-						<img class="img centor-block"src="Resource/img/admin_icon.png" width="200" height="200"alt="">
+						<img class="img-fluid centor-block"src="Resource/img/admin_icon.png" width="150px" height="150px"alt="">
 				</div>
 				<div class ="a">
-					<input type = "radio" name ="reg_radio"  value="admin">관리자
+					<input type = "radio" name ="reg_radio"  value="admin"> 관리자
 				</div>
 			</div>
 		</div>
