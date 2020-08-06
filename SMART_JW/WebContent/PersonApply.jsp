@@ -27,9 +27,11 @@
 <!-- 타이틀 -->
 	<h4 style="margin-top:50px; text-align:center">인원 출입 신청</h4>
 	
+<!--  -->
+	<h5 style="text-align:center; margin-top:20px">업체(기관)정보</h5>
 <!-- 업체정보 칸 -->
-<div class="row">
-	<div class="1" style="width:auto; height:200px;margin-top:20px;margin-left:50px; border:2px solid black;">
+<div class="centor-sort">
+	<div class="1" style="width:auto; height:200px; border:2px solid black;">
 		<div style="margin:20px;">
 			<div class="row form-inline">
 				<h5>업체명 　　　　</h5>
@@ -48,21 +50,20 @@
 				<h5 class="form-control" style="margin-left:10px;font-size:12px">123456789101</h5>
 			</div>
 		</div>
-		
 	</div>
-	
-	<div class ="col">
-			<div class="row" style="text-align:center">
-				<img style="text-align:center; width:150px; height:150px;" class="img-resize" src="Resource/img/logo_icon.png" alt="">
-			</div>		
-			<div class="row">
-				 <button type="submit" class="btn btn-primary" style="font-size:12px">사진등록</button>
-			</div>
+</div>
+
+<div class="centor-sort">
+	<div style="text-align:center">
+			<img style="text-align:center; width:150px; height:150px;" class="img-resize" src="Resource/img/logo_icon.png" alt="">
+	</div>		
+	<div >
+			<button type="submit" class="btn btn-primary" style="font-size:12px">사진등록</button>
 	</div>
 </div>
 
 <!-- 성명 -->
-	<div style="width:350px; margin:0 auto; margin-top:50px">
+	<div style="width:350px; margin:0 auto; margin-top:20px">
 		<h5 style="font-size:15px">성명</h5>
 		<div class="form-group">
 			<input type="text" name="userID" placeholder="" class="form-control" style="width:200px; font-size:12px; margin-top:10px">
