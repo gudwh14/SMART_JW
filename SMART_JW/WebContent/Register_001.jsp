@@ -8,6 +8,42 @@
 	<link rel="stylesheet" href="Resource/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="Resource/vendor/bootstrap/css/custom.css">
 	<title>스마트 항만공사</title>
+	
+	  
+  <script type="text/javascript">
+			function inputCheck() {
+			var radio = document.getElementsByName("reg_radio");
+			var radio_flag = "";
+			var check = document.getElementsByName("reg_check");
+			var check_flag = false;
+			
+			for(var i=0; i<radio.length;i++) {
+				if(radio[i].checked) {
+					radio_flag = radio[i].value;
+				}
+			}
+			
+			for(var i=0; i<check.length; i++) {
+				if(check[i].checked) {
+					check_flag = true;
+				}
+			}
+			
+			if(radio_flag=="") {
+				alert("가입유형을 선택해주세요.");
+				return false;
+			}
+			else if(check_flag == false) {
+				alert("개인정보 수집 및 이용에 대한 약관을 동의 해주세요.");
+				return false;
+			}
+			else {
+				return true;
+			}
+			return false;
+		}	
+	</script>
+	
 </head>
 <body> 
 	<!-- 로고 이미지 -->
@@ -15,7 +51,7 @@
 		 <img class="img-resize" src="Resource/img/logo_icon2.png" alt="">
 	</div>
 	
-	
+	<form action="ActionJSP/Register001Action.jsp" method="post">
 	<h5 style="text-align:center; font-size:18px; margin-top:30px;">가입유형 선택</h5>
 	<!-- 회원가입 TYPE 고르기 -->
 	<div class ="centor-sort" style ="text-align:center; margin-bottom:50px;">
@@ -42,7 +78,7 @@
 
 	<!-- 개인정보 수집동의 -->
 	<div class ="1" style="width:350px; margin:0 auto;">
-		<input type="checkbox" name="check" value="agree">개인정보 수집 및 이용에 대한 약관
+		<input type="checkbox" name="reg_check" value="agree">개인정보 수집 및 이용에 대한 약관
 		<div class="text" style="height:auto; border:1px solid gold; margin-top:10px;">
 			<div style="wdith:auto;">
 				<h4 style="font-size:11px; margin:10px">
@@ -76,11 +112,11 @@
 	
 	<!-- 취소,다음 -->
 	<div class="container mt-5 centor-block" style="max-width:300px display: inline-block;text-align: center;">
-		
 		<button type="submit" class="btn btn-secondary btn-sm" style="width:100px">취소</button>
-		<button type="submit" class="btn btn-success btn-sm" style="margin-left:10px; width:100px">다음</button>
+		<button type="submit" onclick="return inputCheck()" class="btn btn-success btn-sm" style="margin-left:10px; width:100px">다음</button>
 		
 	</div>
+	</form>
 	
 	<!-- 하단 footer -->
 	<div >
@@ -94,6 +130,5 @@
 	<!-- Bootstrap core JavaScript -->
   <script src="Resource/vendor/jquery/jquery.min.js"></script>
   <script src="Resource/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
