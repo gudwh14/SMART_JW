@@ -13,54 +13,53 @@
 <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script> 
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript">
-
-function idCheck(){ 
-	var userName = $("#userID").val(); 
-	$.ajax({ 
-		async :true,
-		type : 'POST', 
-		url : './BoardIdCheckServlet', 
-		data : {
-			"id" : $('userID').val();
-		},
-		success : function(data){ 
-			if($.trim(data)==0){
-				$('#checkMsg').html('<p style="color:blue">사용가능</p>'); 
-				} else{ 
-					$('#checkMsg').html('<p style="color:red">사용불가능</p>'); 
-					}
-			} 
-		}) 
-}
-
-
-function pwdcheck(){
-	var password1 = $("#userpassword").val();
-	var password2 = $("#userpw_check").val();
-	if(password1 != password2)
-		{
-				$("#checkMessage").html("비밀번호가 일치하지 않습니다.");		
-		}
-	else
-		{
-				$("#checkMessage").html("");
-		}
-	
-}
-$(document).ready(function(){
-	var fileTarget = $('.filebox .upload-hidden'); 
-	
-	
-	fileTarget.on('change', function(){ // 값이 변경되면 
-			if(window.FileReader){ // modern browser 
-				var filename = $(this)[0].files[0].name; } 
-			else { // old IE 
-				var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출 
+	function idCheck(){ 
+		var userName = $("#userID").val(); 
+		$.ajax({ 
+			async :true,
+			type : 'POST', 
+			url : './BoardIdCheckServlet', 
+			data : {
+				"id" : $('userID').val();
+			},
+			success : function(data){ 
+				if($.trim(data)==0){
+					$('#checkMsg').html('<p style="color:blue">사용가능</p>'); 
+					} else{ 
+						$('#checkMsg').html('<p style="color:red">사용불가능</p>'); 
+						}
 				} 
-	// 추출한 파일명 삽입 
-	$(this).siblings('.upload-name').val(filename); 
-	}); 
-});
+			}) 
+	}
+
+
+	function pwdcheck(){
+		var password1 = $("#userpassword").val();
+		var password2 = $("#userpw_check").val();
+		if(password1 != password2)
+			{
+					$("#checkMessage").html("비밀번호가 일치하지 않습니다.");		
+			}
+		else
+			{
+					$("#checkMessage").html("");
+			}
+		
+	}
+	$(document).ready(function(){
+		var fileTarget = $('.filebox .upload-hidden'); 
+		
+		
+		fileTarget.on('change', function(){ // 값이 변경되면 
+				if(window.FileReader){ // modern browser 
+					var filename = $(this)[0].files[0].name; } 
+				else { // old IE 
+					var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출 
+					} 
+		// 추출한 파일명 삽입 
+		$(this).siblings('.upload-name').val(filename); 
+		}); 
+	});
 </script>
 <style>
 	
@@ -110,9 +109,11 @@ $(document).ready(function(){
 
 
 <body>
- <div class ="imagecentor-block " style ="max-wdith:150px display: inline-block;text-align: center;">
-       <img class="img centor-block" src="Resource/img/logo_icon.png" width="150" height="150 "alt="">
-   </div>
+ <!-- 로고 이미지 -->
+	<div class ="image centor-block " style ="margin-top:80px; max-wdith:150px display: inline-block;text-align: center;">
+		<a href="index.html"><img class="img-resize" src="Resource/img/logo_icon2.png" alt=""></a> 
+	</div>
+	<BR>
    <div class = "container">
    		<div class ="row">
    			<div class ="col text-center">

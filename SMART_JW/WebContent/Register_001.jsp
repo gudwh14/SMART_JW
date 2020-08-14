@@ -48,7 +48,7 @@
 <body> 
 	<!-- 로고 이미지 -->
 	<div class ="image centor-block " style ="margin-top:80px; max-wdith:150px display: inline-block;text-align: center;">
-		 <img class="img-resize" src="Resource/img/logo_icon2.png" alt="">
+		 <a href="index.html"><img class="img-resize" src="Resource/img/logo_icon2.png" alt=""></a>
 	</div>
 	
 	<form action="ActionJSP/Register001Action.jsp" method="post">
@@ -103,7 +103,7 @@
 		<h5 style="font-size:15px">본인인증</h5>
 		<div class="form-group">
 			<div class="form-inline">
-				<input type="text" name="userID" placeholder="전화번호를 입력해주세요" class="form-control" style="width:200px; font-size:12px">
+				<input type="text" id="number" name="userID" placeholder="전화번호를 입력해주세요" class="form-control" style="width:200px; font-size:12px">
 				<button type="submit" class="btn btn-primary" style="margin-left:10px; font-size:12px">전송</button>
 			</div>
 			<input type="text" name="userID" placeholder="인증번호" class="form-control" style="width:200px; font-size:12px; margin-top:10px">
@@ -114,7 +114,6 @@
 	<div class="container mt-5 centor-block" style="max-width:300px display: inline-block;text-align: center;">
 		<button type="submit" class="btn btn-secondary btn-sm" style="width:100px">취소</button>
 		<button type="submit" onclick="return inputCheck()" class="btn btn-success btn-sm" style="margin-left:10px; width:100px">다음</button>
-		
 	</div>
 	</form>
 	
