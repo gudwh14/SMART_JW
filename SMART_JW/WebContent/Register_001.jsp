@@ -47,8 +47,8 @@
 </head>
 <body> 
 	<!-- 로고 이미지 -->
-	<div class ="image centor-block " style ="margin-top:80px; max-wdith:150px display: inline-block;text-align: center;">
-		 <a href="index.html"><img class="img-resize" src="Resource/img/logo_icon2.png" alt=""></a>
+	<div class ="image centor-block " style ="margin-top:80px; max-width:150px display: inline-block;text-align: center;">
+		 <a href="index.jsp"><img class="img-resize" src="Resource/img/logo_icon2.png" alt=""></a>
 	</div>
 	
 	<form action="ActionJSP/Register001Action.jsp" method="post">
@@ -112,7 +112,7 @@
 	
 	<!-- 취소,다음 -->
 	<div class="container mt-5 centor-block" style="max-width:300px display: inline-block;text-align: center;">
-		<button type="submit" class="btn btn-secondary btn-sm" style="width:100px">취소</button>
+		<input type="button" onclick="history.back();"class="btn btn-secondary btn-sm" style="width:100px" value="취소">
 		<button type="submit" onclick="return inputCheck()" class="btn btn-success btn-sm" style="margin-left:10px; width:100px">다음</button>
 	</div>
 	</form>

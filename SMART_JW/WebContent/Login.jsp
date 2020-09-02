@@ -1,54 +1,88 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="EUC-KR">
-	<meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
-	<link rel="stylesheet" href="Resource/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="Resource/vendor/bootstrap/css/custom.css">
-	<title>½º¸¶Æ® Ç×¸¸°ø»ç</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+   <link rel="stylesheet" href="Resource/vendor/bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="Resource/vendor/bootstrap/css/custom.css">
+   <title>ìŠ¤ë§ˆíŠ¸ í•­ë§Œê³µì‚¬</title>
+   
+   <script type="text/javascript">
+      function inputCheck() {
+         var userID = document.getElementById("userID");
+         var userPW = document.getElementById("userPW");
+         
+         if(userID.value.trim()== "") {
+        	 alert("ì•„ì´ë””ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
+         }
+         else if(userPW.value.trim()=="") {
+        	 alert("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
+         }
+         else {
+        	 return true;
+         }
+         return false;
+      }
+   
+   
+   </script>
 </head>
 <body> 
 
-	<!-- ·Î°í ÀÌ¹ÌÁö -->
-	<div class ="image centor-block " style ="margin-top:90px; max-wdith:150px display: inline-block;text-align: center;">
-		 <a href="index.html"><img class="img centor-block" src="Resource/img/logo_icon.png" width="150" height="150 "alt=""></a>
-	</div>
-	
-	<!-- ·Î±×ÀÎ ÀÔ·ÂÃ¢ Æû -->
-	<div class="container mt-3" style="max-width: 300px;">
-		<form method="post" action="./LoginAction.jsp">
-			<div class="form-group">
-				<label>¾ÆÀÌµğ</label>
-				<input type="text" name="userID" class="form-control">
-			</div>
-			<div class="form-group">
-				<label>ºñ¹Ğ¹øÈ£</label>
-				<input type="password" name="userPW" class="form-control">
-			</div>
-		</form>		
-	</div>
-	<div class="container mt-3" style="max-width:300px display: inline-block;text-align: center;">
-				<button type="submit" class="btn btn-primary">·Î±×ÀÎ</button>
-	</div>
-	
-	<div class="container mt-3 centor-block" style="max-width:300px display: inline-block;text-align: center;">
-		<a class="navbar-text" href="#">ID/PWÃ£±â</a>
-		<a class="navbar-text" href="Register_001.jsp">È¸¿ø°¡ÀÔ</a>
-	</div>
-	
-	<!-- ÇÏ´Ü footer -->
-	<div >
-		<footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">
-	
-	      Copyright ¨Ï ½º¸¶Æ® Ç×¸¸°ø»ç All Rights Reserved.
-	
-	    </footer>
+   <!-- ë¡œê³  ì´ë¯¸ì§€ -->
+   <div class ="image centor-block " style ="margin-top:90px; max-wdith:150px display: inline-block;text-align: center;">
+       <a href="index.jsp"><img class="img centor-block" src="Resource/img/logo_icon.png" width="150" height="150 "alt=""></a>
+   </div>
+   
+   <!-- ë¡œê·¸ì¸ ì…ë ¥ì°½ í¼ -->
+   <div class="container mt-3" style="max-width: 300px;">
+      <form method="post" action="ActionJSP/LoginAction.jsp">
+         <div class="form-group">
+            <label>ì•„ì´ë””</label>
+            <input type="text" name="userID" id="userID" class="form-control">
+         </div>
+         <div class="form-group">
+            <label>ë¹„ë°€ë²ˆí˜¸</label>
+            <input type="password" name="userPW" id="userPW" class="form-control">
+         </div>
+         
+         <div class="container mt-3" style="max-width:300px display: inline-block;text-align: center;">
+            <button type="submit"  onclick="return inputCheck()" class="btn btn-primary">ë¡œê·¸ì¸</button>
+   </div>
+      </form>      
+   </div>
+   
+   <div class="container mt-3 centor-block" style="max-width:300px display: inline-block;text-align: center;">
+      <a class="navbar-text" href="#">ID/PWì°¾ê¸°</a>
+      <a class="navbar-text" href="Register_001.jsp">íšŒì›ê°€ì…</a>
+   </div>
+   
+   <!-- í•˜ë‹¨ footer -->
+   <div >
+      <footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">
+   
+         Copyright â“’ ìŠ¤ë§ˆíŠ¸ í•­ë§Œê³µì‚¬ All Rights Reserved.
+   
+       </footer>
     </div>
-	<!-- Bootstrap core JavaScript -->
+   <!-- Bootstrap core JavaScript -->
   <script src="Resource/vendor/jquery/jquery.min.js"></script>
   <script src="Resource/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <%
+     String msg = request.getParameter("msg");
+  
+     if(msg!=null && msg.equals("-1")) {
+        out.println("<br>");
+        out.println("<font color='red' size='5'>ì•„ì´ë””, ë¹„ë°€ë²ˆí˜¸ë¥¼ í™•ì¸í•´ ì£¼ì„¸ìš”.</font>");
+     }
+     else if(msg!=null && msg.equals("-2")) {
+        out.println("<br>");
+        out.println("<font color='red' size='5'>ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜</font>");
+     }
+  %>
 
 </body>
 </html>

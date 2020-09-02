@@ -6,9 +6,9 @@ import java.sql.DriverManager;
 public class DataBaseUtil {
 	public static Connection getConnection() {
 		try {
-			String URL = "jdbc:mysql://3.35.4.181:3306/SMART_JW?useSSL=false&serverTimezone=UTC";
+			String URL = "jdbc:mysql://127.0.0.1:3306/SMART_JW?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8";
 			String ID = "root";
-			String PW = "jw2020";
+			String PW = "root";
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			return DriverManager.getConnection(URL,ID,PW);
 		}
